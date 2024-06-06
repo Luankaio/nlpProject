@@ -33,7 +33,7 @@ corpus_dom_casmurro = nltk.corpus.machado.raw('romance/marm08.txt')
 texto = pre_processamento(corpus_dom_casmurro)
 
 # tokenizando 
-tokens = nltk.Text(word_tokenize(corpus_dom_casmurro))
+tokens = nltk.Text(word_tokenize(texto))
 tokens.collocations()
 # contagem de frequencia
 fd = FreqDist(tokens)
